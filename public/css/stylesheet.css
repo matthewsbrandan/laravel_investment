@@ -31,17 +31,19 @@ section#conteudo-view{
     right: 0;
     float: right;
     padding: 20px;
+    
 
     width: 300px;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
 
     background: rgba(0,0,0,.7);
 }
-
 section#conteudo-view h1{
     float: left;
     width: 100%;
     margin-top: 50px;
+    text-align: center;
 
     font: 3em 'Noto Sans JP', sans-serif;
     color: #f3f3f3;
@@ -90,5 +92,12 @@ section#conteudo-view form input[type="submit"]{
     background: #505050;
     color: #f9f9f9;
     font: 1em 'Noto Sans JP', sans-serif;
-
+}
+@media(max-width:768px){
+    section#conteudo-view{
+        width: 100%;
+    }
+    section#conteudo-view form input[type="submit"]{
+        width: 100% !important;
+    }
 }

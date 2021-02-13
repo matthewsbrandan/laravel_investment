@@ -49,9 +49,9 @@ class CreateUsersTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::table('users', function(Blueprint $table) {
-			// Delete relationships before deleting the table
-		});
+		// Schema::table('users', function(Blueprint $table) {
+		// 	// Delete relationships before deleting the table
+		// });
 
 		Schema::drop('users');
 	}
